@@ -3,7 +3,8 @@ package com.github.dolphinmind.array.binarysearch;
 /**
  * @author dolphinmind
  * @ClassName RemoveElement
- * @description 移除元素分析
+ * @description 27 移除元素
+ *              移除元素分析
  *              快慢指针
  *              双向指针
  *              slow和left指针都处于有效数组的末尾，即不包含var的元素的最后一个位置之后，返回的slow和left即有效数组的长度
