@@ -20,6 +20,7 @@ public class BinarySearch {
     /**
      * 二分法搜索：左闭右闭区间
      * 分析：循环条件看索引，中间索引采用移位，逻辑判断条件优先选取目标，循环不成立有兜底 -1
+     *      left 处于有效数组的末尾，即不包含target的元素的最后一个位置之后，返回的left即有效数组的长度
      * @param nums
      * @param target
      * @return

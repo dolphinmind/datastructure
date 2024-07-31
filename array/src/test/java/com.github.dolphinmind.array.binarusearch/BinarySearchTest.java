@@ -10,7 +10,7 @@ import org.junit.Test;
  * @date 2024/7/31
  */
 
-public class ApiTest {
+public class BinarySearchTest {
 
     /**
      * 找房子编号，不要找房子里面的内容
@@ -28,7 +28,8 @@ public class ApiTest {
 
     @Test
     public void test_binarySearchRightOpen() {
-        int[] nums = {-1,0,3,5,9,12};
+//        int[] nums = {-1,0,3,5,9,12};
+        int[] nums = {};
         int target = 2;
 
         BinarySearch binarySearch = new BinarySearch();
