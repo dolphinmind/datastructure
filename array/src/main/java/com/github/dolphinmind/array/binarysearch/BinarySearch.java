@@ -3,7 +3,8 @@ package com.github.dolphinmind.array.binarysearch;
 /**
  * @author dolphinmind
  * @ClassName BinarySearch
- * @description 前提条件：有序数组，且无重复元素
+ * @description 704 二分法搜索
+ *              前提条件：有序数组，且无重复元素
  *              循环判断：专注索引
  *              逻辑判断：专注值
  *              特殊情况：无结果，返回-1
