@@ -105,7 +105,7 @@ public class BinarySearch {
                 right = mid - 1;
             } else if (target < nums[mid]) {
                 right = mid - 1;
-            } else {
+            } else if (target > nums[mid]){
                 left = mid + 1;
             }
         }
