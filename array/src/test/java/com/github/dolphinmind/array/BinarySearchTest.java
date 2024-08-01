@@ -1,6 +1,6 @@
-package com.github.dolphinmind.array.binarusearch;
+package com.github.dolphinmind.array;
 
-import com.github.dolphinmind.array.binarysearch.BinarySearch;
+import com.github.dolphinmind.array.BinarySearch;
 import org.junit.Test;
 
 /**

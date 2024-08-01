@@ -1,4 +1,4 @@
-package com.github.dolphinmind.array.binarysearch;
+package com.github.dolphinmind.array;
 
 /**
  * @author dolphinmind

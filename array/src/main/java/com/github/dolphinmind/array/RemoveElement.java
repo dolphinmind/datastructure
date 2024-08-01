@@ -1,4 +1,4 @@
-package com.github.dolphinmind.array.binarysearch;
+package com.github.dolphinmind.array;
 
 /**
  * @author dolphinmind
@@ -18,6 +18,8 @@ public class RemoveElement {
 
     /**
      * 快慢指针同向
+     *      slow 处于有效数组的末尾，即不包含target的元素的最后一个位置之后，返回的left即有效数组的长度
+     *
      * @param nums
      * @param val
      * @return
@@ -39,8 +41,10 @@ public class RemoveElement {
     }
 
     /**
-     * 双指针反向：左指针 右指针 while边界问题也符合开闭原则：左闭右开
+     * 双指针反向：左指针 右指针 while边界问题也符合开闭原则：左闭右闭
      * 疑惑：双指针如果left==right的时候，nums[left] == val,这时返回
+     *      left 处于有效数组的末尾，即不包含target的元素的最后一个位置之后，返回的left即有效数组的长度
+     *
      * @param nums
      * @param val
      * @return
@@ -66,7 +70,7 @@ public class RemoveElement {
     }
 
     /**
-     * 左闭右闭
+     * 左闭右开
      * @param nums
      * @param val
      * @return
