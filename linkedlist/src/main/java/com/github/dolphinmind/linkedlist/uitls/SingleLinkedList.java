@@ -257,6 +257,42 @@ public class SingleLinkedList<E> {
         head = dummyHead.next;
     }
 
+    /**
+     * 删除链表倒数第n个结点 19
+     * 倒数第n个, 所以快指针先于慢指针移动n个结点.慢指针要在目标位置前停止
+     * @param n
+     */
+    public void removeNthNodeFromEndOfList(int n) {
+
+        if (n < 1 || null == head) {
+            return;
+        }
+
+        ListNode<E> slow = head;
+        ListNode<E> fast = head;
+
+        // 移动快指针，保证快指针先于慢指针移动n个结点
+        for (int i = 0; i < n; i++) {
+            if (null != fast.next) {
+                fast = fast.next;
+            } else {
+                System.out.println("游标超过了原链表的最大长度，n过大,只返回头结点值：" + head.val);
+                return;
+            }
+        }
+
+        while (null != fast.next) {
+            fast = fast.next;
+            slow = slow.next;
+        }
+
+        // 此处判断的是slow快到了链表的末端，即便slow.next.next为空也没关系
+        if (null != slow.next) {
+            slow.next = slow.next.next;
+        }
+
+    }
+
     // 打印链表
     public void printLinkedList() {
 

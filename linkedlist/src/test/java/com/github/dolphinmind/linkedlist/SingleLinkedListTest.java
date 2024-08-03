@@ -148,4 +148,12 @@ public class SingleLinkedListTest {
         singleLinkedList.swapPairs();
         singleLinkedList.printLinkedList();
     }
+
+    @Test
+    public void test_removeNthNodeFromEndOfList() {
+        SingleLinkedList<Integer> singleLinkedList = init();
+
+        singleLinkedList.removeNthNodeFromEndOfList(6);
+        singleLinkedList.printLinkedList();
+    }
 }

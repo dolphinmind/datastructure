@@ -9,8 +9,8 @@ package com.github.dolphinmind.linkedlist.uitls;
 
 // 链表组成元素：节点
 public  class ListNode<E> {
-    E val;
-    ListNode<E> next;
+    public E val;
+    public ListNode<E> next;
 
     public ListNode()
     {
