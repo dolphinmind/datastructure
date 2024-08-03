@@ -140,4 +140,12 @@ public class SingleLinkedListTest {
         singleLinkedList.reverseSingleLinkedList();
         singleLinkedList.printLinkedList();
     }
+
+    @Test
+    public void test_swapPairs() {
+        SingleLinkedList<Integer> singleLinkedList = init();
+
+        singleLinkedList.swapPairs();
+        singleLinkedList.printLinkedList();
+    }
 }

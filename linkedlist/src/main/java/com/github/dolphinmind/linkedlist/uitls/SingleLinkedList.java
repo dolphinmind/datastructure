@@ -191,6 +191,9 @@ public class SingleLinkedList<E> {
         System.out.println(cur.val);
     }
 
+    /**
+     * 链表翻转
+     */
     public void reverseSingleLinkedList() {
 
         // 头节点为空，或者为单个结点直接返回
@@ -226,6 +229,30 @@ public class SingleLinkedList<E> {
 
         head = leftHead;
 
+    }
+
+    /**
+     * 链表两两结点交换
+     */
+
+    public void swapPairs() {
+        ListNode<E> dummyHead = new ListNode<>(null, head);
+        ListNode<E> cursor = dummyHead;
+
+        while (null != cursor.next && null != cursor.next.next) {
+
+            ListNode<E> left = cursor.next;
+            ListNode<E> mid  = cursor.next.next;
+            ListNode<E> right = cursor.next.next.next;
+
+            cursor.next = mid;
+            mid.next    = left;
+            left.next   = right;
+
+            cursor = left;
+        }
+
+        head = dummyHead.next;
     }
 
     // 打印链表
