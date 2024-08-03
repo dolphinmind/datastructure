@@ -232,7 +232,9 @@ public class SingleLinkedList<E> {
     }
 
     /**
-     * 链表两两结点交换
+     * 链表两两结点交换 LeetCode 24
+     * cursor引领左侧子链表
+     * right 引领右侧子链表
      */
 
     public void swapPairs() {
