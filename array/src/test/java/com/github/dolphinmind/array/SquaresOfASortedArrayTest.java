@@ -1,6 +1,6 @@
-package com.github.dolphinmind.array.binarusearch;
+package com.github.dolphinmind.array;
 
-import com.github.dolphinmind.array.binarysearch.SquaresOfASortedArray;
+import com.github.dolphinmind.array.SquaresOfASortedArray;
 import org.junit.Test;
 
 /**
