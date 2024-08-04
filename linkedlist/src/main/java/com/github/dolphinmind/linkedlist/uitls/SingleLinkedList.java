@@ -293,6 +293,30 @@ public class SingleLinkedList<E> {
 
     }
 
+    /**
+     * 寻找链表中间结点
+     */
+    public void findMidNode() {
+        if (head == null) {
+            return;
+        }
+
+        if (head.next == null) {
+            System.out.println("链表只有一个结点，直接打印：" + head.val);
+        }
+
+        ListNode<E> slow = head;
+        ListNode<E> fast = head;
+
+        while (null != fast && null != fast.next) {
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+        System.out.println("链表的中间结点为：" + slow.val);
+    }
+
+
+
     // 打印链表
     public void printLinkedList() {
 

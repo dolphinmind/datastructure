@@ -156,4 +156,10 @@ public class SingleLinkedListTest {
         singleLinkedList.removeNthNodeFromEndOfList(6);
         singleLinkedList.printLinkedList();
     }
+
+    @Test
+    public void testfindMidNode() {
+        SingleLinkedList<Integer> singleLinkedList = init();
+        singleLinkedList.findMidNode();
+    }
 }
