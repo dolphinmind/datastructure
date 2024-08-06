@@ -8,6 +8,9 @@
     <artifactId>datastructure</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
+    <modules>
+        <module>hashcode</module>
+    </modules>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
